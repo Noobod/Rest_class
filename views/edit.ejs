@@ -8,7 +8,7 @@
 </head>
 <body>
     <h2>Edit your post</h2>
-    <p id="test">Post id : <%= post.id %></p>
+    <p>Post id : <%= post.id %></p>
     <p>Post username : @<%= post.username %> </p>
     <form method="post" action="/posts/<%=post.id%>?_method=PATCH">
         <textarea rows="10" cols="35" name="content"><%=post.content%></textarea>
